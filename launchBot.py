@@ -1,5 +1,5 @@
 print("Starting...");
 
-from TelegramBot.main import startBot  # import telegramBot
+from TelegramBot.main import startBot
 
-startBot();  # start polling
+startBot();

@@ -1,0 +1,47 @@
+body {
+	  background-color: #DEDCDC;  
+    position: relative;
+	  font-family: 'Noto Sans', sans-serif;
+	  font-size: 16px;
+	  line-height: 1.4;
+	  color: #000;
+	  min-width: 320px;
+	  overflow-x: hidden;
+	  height: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px #FFFFFF;
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar-menu li a {
+    display: inline-block;
+
+}
+  
+.mainlogo {
+    align-items: center;
+}

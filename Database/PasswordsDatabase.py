@@ -16,7 +16,7 @@ from sqlite3 import Connection
 
 class PasswordsDatabase:
     def __init__ (self, username: str) -> None:
-        self.__connection = Connection("Passwords.db");
+        self.__connection = Connection("Database/Passwords.db");
         self.__cursor = self.__connection.cursor();
         self.__username: str = username;
 
@@ -63,7 +63,7 @@ if (__name__ == "__main__"):
     unit = PasswordsDatabase("mrKalMamba");
     # unit.addUser();
     # unit.addPassword("Yandex", "KirillAndrianov2005");
-    # `unit.deletePassword("Yandex");
+    # unit.deletePassword("Yandex");
     print(unit.getAll());
 
     # con = Connection("Passwords.db");
