@@ -5,7 +5,6 @@ from Database.TelegramBotDatabase import TelegramBotDatabase
 from TelegramBot.buttons import *
 from TelegramBot.messages import *
 
-
 bot = telebot.TeleBot(TOKEN)
 
 
@@ -19,6 +18,16 @@ def start(message):
         btn = types.InlineKeyboardButton(text=text, callback_data=callback)
         markup.add(btn)
     bot.send_message(message.chat.id, text=start_message, parse_mode="html", reply_markup=markup)
+
+
+@bot.message_handler(commands=["info"])
+def info(message):
+    chat_id = message.chat.id
+    database = TelegramBotDatabase(message.chat.id)
+    database.addUser()
+    language = database.getLanguage()
+    del database
+    bot.send_message(chat_id=chat_id, text=information[language], parse_mode="html")
 
 
 @bot.callback_query_handler(func=lambda call: True)
@@ -46,6 +55,21 @@ def callback(call):
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                               text=messageToUser, parse_mode="html", reply_markup=markup)
 
+    elif call.data == "Passwords":
+        markup = types.InlineKeyboardMarkup()
+        for text, callback in passwords_buttons[language].items():
+            btn = types.InlineKeyboardButton(text=text, callback_data=callback)
+            markup.add(btn)
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                              text=passwords_ms[language], parse_mode="html", reply_markup=markup)
+
+    elif call.data == "generation":
+        markup = types.InlineKeyboardMarkup()
+        for text, callback in generation_buttons[language].items():
+            btn = types.InlineKeyboardButton(text=text, callback_data=callback)
+            markup.add(btn)
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                              text=passwords_ms[language], parse_mode="html", reply_markup=markup)
 
 def startBot():
     print("Keymaster's Bot is started and ready to work.")
