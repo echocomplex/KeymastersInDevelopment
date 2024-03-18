@@ -18,7 +18,7 @@ class TelegramBotDatabase:
     def __init__ (self, chatID: int) -> None:
         self.__connection = Connection("Database/TelegramBotUsers.db");
         self.__cursor = self.__connection.cursor();
-        self.__chatID: str = chatID;
+        self.__chatID: int = chatID;
 
     def __del__ (self) -> None:
         self.__connection.close();
@@ -26,7 +26,7 @@ class TelegramBotDatabase:
     def addUser (self) -> None:
         self.__cursor.execute(
             """
-            INSERT OR IGNORE INTO users (chat_id, language, login_status) 
+            INSERT OR IGNORE INTO users (chat_id, language, login_status)
             VALUES (?, ?, ?)
             """,
             (self.__chatID, "RU", False));
