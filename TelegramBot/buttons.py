@@ -18,7 +18,7 @@ main_menu_buttons = {
         "Keymaster's Passwords": "Passwords",
         "Keymaster's Vault": "Vault",
         "Keymaster's Crypto": "Crypto",
-        "Keymaster's SCAMGuard": "SCAMGuard"
+        "Keymaster's SCAMGuard": "Scam"
     },
     "EN": {
         "Keymaster's Passwords": "Passwords",
@@ -32,23 +32,57 @@ passwords_buttons = {
     "RU": {
         "Генератор случайных паролей": "generation",
         "Генератор паролей из текста": "text",
-        "Анализ паролей на надежность": "analize",
+        "Анализ паролей на надежность": "analiz",
     },
     "EN": {
         "Generation random passwords": "generation",
         "Generation passwords from text": "text",
-        "Analized passwords": "analize",
+        "Analized passwords": "analiz",
     },
 }
 
 generation_buttons = {
     "RU": {
-        "Нижний регистр": "down_regist",
-        "Верхний регистр": "up_regist",
-        "Цифры": "numb",
-        "Специальные цифры": "special_numbr",
-        "Сгенерировать пароль": "generation_passwords"
+        "Нижний регистр": "down",
+        "Верхний регистр": "up",
+        "Цифры": "digit",
+        "Специальные цифры": "special",
+        "Сгенерировать пароль": "generate",
     },
+    "EN": {
+        "Lowercase": "down",
+        "Uppercase": "up",
+        "Digits": "digit",
+        "Special digits": "special",
+        "Generate password": "generate",
+
+    },
+}
+
+vault_buttons = {
+    "RU": "хз че тут",
+    "EN": "hz che tut"
+}
+
+crypto_buttons = {
+    "RU": "хз че тут",
+    "EN": "hz che tut"
+}
+
+scam_buttons = {
+    "RU": "хз че тут",
+    "EN": "hz che tut"
+}
+
+liveMenu = {
+    0: {"0":  "текст без галки",
+            "1": "текст с галкой ✅"},
+    1: {"0":  "текст без галки",
+            "1": "текст с галкой ✅"},
+    2: {"0":  "текст без галки",
+            "1": "текст с галкой ✅"},
+    3: {"0":  "текст без галки",
+            "1": "текст с галкой ✅"},
 }
 
 

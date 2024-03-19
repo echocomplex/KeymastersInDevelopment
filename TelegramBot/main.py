@@ -63,13 +63,39 @@ def callback(call):
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                               text=passwords_ms[language], parse_mode="html", reply_markup=markup)
 
-    elif call.data == "generation":
+    elif call.data == "Vault":
         markup = types.InlineKeyboardMarkup()
-        for text, callback in generation_buttons[language].items():
+        for text, callback in vault_buttons[language].items():
             btn = types.InlineKeyboardButton(text=text, callback_data=callback)
             markup.add(btn)
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
-                              text=passwords_ms[language], parse_mode="html", reply_markup=markup)
+                              text=vault_ms[language], parse_mode="html", reply_markup=markup)
+
+    elif call.data == "Crypto":
+        markup = types.InlineKeyboardMarkup()
+        for text, callback in crypto_buttons[language].items():
+            btn = types.InlineKeyboardButton(text=text, callback_data=callback)
+            markup.add(btn)
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                              text=crypto_ms[language], parse_mode="html", reply_markup=markup)
+
+    elif call.data == "Scam":
+        markup = types.InlineKeyboardMarkup()
+        for text, callback in scam_buttons[language].items():
+            btn = types.InlineKeyboardButton(text=text, callback_data=callback)
+            markup.add(btn)
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                              text=scam_ms[language], parse_mode="html", reply_markup=markup)
+
+    elif call.data in passwords_buttons[language].values():
+        if call.data == "generation":
+            markup = types.InlineKeyboardMarkup()
+            for text, callback in generation_buttons[language].items():
+                btn = types.InlineKeyboardButton(text=text, callback_data=callback)
+                markup.add(btn)
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                                  text=passwords_ms[language], parse_mode="html", reply_markup=markup)
+
 
 def startBot():
     print("Keymaster's Bot is started and ready to work.")
