@@ -68,7 +68,7 @@ def callback(call):
         for text, callback in generation_buttons[language].items():
             btn = types.InlineKeyboardButton(text=text, callback_data=callback)
             markup.add(btn)
-        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+        bot.edit_message_text(chat_id=call.message.chat.id , message_id=call.message.message_id,
                               text=passwords_ms[language], parse_mode="html", reply_markup=markup)
 
 def startBot():
