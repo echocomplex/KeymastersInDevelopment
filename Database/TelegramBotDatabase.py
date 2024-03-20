@@ -75,7 +75,7 @@ if (__name__ == "__main__"):
     # unit = TelegramBotDatabase(7892457894);
     # unit.addUser();
 
-    con = Connection("TelegramBotUsers.db");
+    con = Connection("DatabaseFiles/TelegramBotUsers.db");
     cur = con.cursor();
     cur.execute(""" SELECT * FROM users """);
     print(cur.fetchall());
