@@ -1,3 +1,7 @@
+import os
+java_path = "C:\\Program Files\\Java\\jdk-22"
+os.environ['JAVA_HOME'] = java_path
+
 from Database.TelegramBotDatabase2 import TelegramBotDatabase
 
 database = TelegramBotDatabase(1234567890);
