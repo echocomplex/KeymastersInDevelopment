@@ -34,5 +34,26 @@ information = {
            "<b><i>IDI NAHUI.</i></b>"
 }
 
+lowercase = {
+    "RU": "<b>Пришлите текст, соответствующий вашему выбору</b>",
+    "EN": "<b>Send the text of your choice</b>",
+}
+
+vault_ms = {
+    "RU": "<b>Леха лох</b>",
+    "EN": "<b>leha loh</b>",
+}
+
+crypto_ms = {
+    "RU": "<b>Леха лох</b>",
+    "EN": "<b>leha loh</b>",
+}
+
+scam_ms = {
+    "RU": "<b>Леха  лох</b>",
+    "EN": "<b>leha loh</b>",
+}
+
+
 
 
