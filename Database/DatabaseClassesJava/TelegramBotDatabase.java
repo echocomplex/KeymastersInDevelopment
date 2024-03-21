@@ -30,7 +30,7 @@ public class TelegramBotDatabase {
                 // Обработка исключения: вывод сообщения или логирование ошибки
                 e.printStackTrace();
             }
-            this.connection = DriverManager.getConnection("jdbc:sqlite:/Users/mac/Documents/project-codes/multi-languages/KeymastersInDevelopment/Database/DatabaseFiles/TelegramBotUsers.db");
+            this.connection = DriverManager.getConnection("jdbc:sqlite:TelegramBotUsers.db");
             this.statement = this.connection.createStatement();
             this.chatID = chatID;
         }

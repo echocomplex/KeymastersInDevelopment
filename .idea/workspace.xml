@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01047846-ff8c-48da-a0da-0ab9ce976eba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Keymaster's.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Keymaster's.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/TelegramBotDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseClassesJava/TelegramBotDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/TelegramBotDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseClassesJava/TelegramBotDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/testDatabase.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,9 +37,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Database",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
+    "last_opened_file_path": "/Users/mac/Documents/project-codes/multi-languages/KeymastersInDevelopment",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
