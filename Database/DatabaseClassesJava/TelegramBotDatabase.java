@@ -5,36 +5,30 @@ This code was written by echo complex (https://t.me/echoscomplex)
 License - GNU GPLv2 Keymaster's © 2024 (CEO - echo complex (https://t.me/echoscomplex))
 All rights reserved.
 
+P.S. Command to create Database: CREATE TABLE users (chat_id INTEGER PRIMARY KEY, language VARCHAR(2) NOT NULL, login_status BOOLEAN NOT NULL)
+
 */
 
-package Database.DatabaseClassesJava;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
 
+
+
 public class TelegramBotDatabase {
     private Connection connection;
-    private Statement statement;
     private int chatID;
 
-    public TelegramBotDatabase (int chatID) {
+    public TelegramBotDatabase (int chatID, String databasePath) {
         try {
-            try {
-                Class.forName("org.sqlite.JDBC");
-            }
-            catch (ClassNotFoundException e) {
-                // Обработка исключения: вывод сообщения или логирование ошибки
-                e.printStackTrace();
-            }
-            this.connection = DriverManager.getConnection("jdbc:sqlite:TelegramBotUsers.db");
-            this.statement = this.connection.createStatement();
+            this.connection = DriverManager.getConnection("jdbc:sqlite:" + databasePath);
             this.chatID = chatID;
         }
-        catch (SQLException e) {
+        catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -45,7 +39,7 @@ public class TelegramBotDatabase {
                 INSERT OR IGNORE INTO users (chat_id, language, login_status) 
                 VALUES (?, ?, ?)
                 """;
-        try (PreparedStatement statement = connection.prepareStatement(query)) {
+        try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.setInt(1, this.chatID);
             statement.setString(2, "RU");
             statement.setBoolean(3, false);
@@ -62,7 +56,7 @@ public class TelegramBotDatabase {
                 SET language = ?
                 WHERE chat_id = ?
                 """;
-        try (PreparedStatement statement = connection.prepareStatement(query)) {
+        try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.setString(1, language);
             statement.setInt(2, this.chatID);
             statement.executeUpdate();
@@ -79,7 +73,7 @@ public class TelegramBotDatabase {
                 WHERE chat_id = ?
                 """;
         String language;
-        try (PreparedStatement statement = connection.prepareStatement(query)) {
+        try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.setInt(1, this.chatID);
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
@@ -102,7 +96,7 @@ public class TelegramBotDatabase {
                 SET login_status = ?
                 WHERE chat_id = ?
                 """;
-        try (PreparedStatement statement = connection.prepareStatement(query)) {
+        try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.setBoolean(1, status);
             statement.setInt(2, this.chatID);
             statement.executeUpdate();
@@ -119,7 +113,7 @@ public class TelegramBotDatabase {
                 WHERE chat_id = ?
                 """;
         boolean loginStatus;
-        try (PreparedStatement statement = connection.prepareStatement(query)) {
+        try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.setInt(1, this.chatID);
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
@@ -128,8 +122,7 @@ public class TelegramBotDatabase {
             else {
                 loginStatus = false;
             }
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             loginStatus = false;
             e.printStackTrace();
         }
@@ -138,14 +131,10 @@ public class TelegramBotDatabase {
 
     public void closeConnection () {
         try {
-            if (this.statement != null) {
-                this.statement.close();
-            }
             if (this.connection != null) {
                 this.connection.close();
             }
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }

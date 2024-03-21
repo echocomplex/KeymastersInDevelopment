@@ -1,11 +1,38 @@
-from Database.TelegramBotDatabase2 import TelegramBotDatabase
+from Database.DatabaseClassesPython.TelegramBotDatabase import TelegramBotDatabase
+from Database.DatabaseClassesPython.PasswordsDatabase import PasswordsDatabase
+from Database.DatabaseClassesPython.Necessary import startDatabase, shutdownDatabase
 
-database = TelegramBotDatabase(1234567890);
+
+startDatabase();
+
+# database = TelegramBotDatabase(1234567890);
+# database.addUser();
+# print(database.getLanguage());
+# print(database.getLoginStatus());
+# database.setLanguage("EN");
+# database.setLoginStatus(True);
+# print(database.getLanguage());
+# print(database.getLoginStatus());
+# del database;
+#
+# database = TelegramBotDatabase(1234567890);
+# database.addUser();
+# print(database.getLanguage());
+# print(database.getLoginStatus());
+# database.setLanguage("EN");
+# database.setLoginStatus(True);
+# print(database.getLanguage());
+# print(database.getLoginStatus());
+# del database;
+
+database = PasswordsDatabase("kekpop");
 database.addUser();
-print(database.getLanguage());
-print(database.getLoginStatus());
-database.setLanguage("EN");
-database.setLoginStatus(True);
-print(database.getLanguage());
-print(database.getLoginStatus());
+database.addPassword("pipi", "kaka");
+database.addPassword("pipi", "kaka");
+database.addPassword("pipi", "kaka");
+database.addPassword("pipi", "kaka");
+print(database.getAll());
+database.deletePassword("pipi")
 del database;
+
+shutdownDatabase();
