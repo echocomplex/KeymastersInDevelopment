@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01047846-ff8c-48da-a0da-0ab9ce976eba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/KeymastersInDevelopment.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/DatabaseClassesJava/DatabaseClassesJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/PasswordDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseClassesJava/PasswordDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/PasswordDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseClassesJava/PasswordDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/TelegramBotDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseClassesJava/TelegramBotDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesJava/UsersDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseClassesJava/UsersDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesPython/PasswordsDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseClassesPython/PasswordsDatabase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseClassesPython/UsersDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseClassesPython/UsersDatabase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseFiles/Passwords.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DatabaseFiles/users.db" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseFiles/Users.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/testDatabase.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Database/DatabaseClassesJava/TelegramBotDatabase.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2dxXGycPgUrP1WC7YW3jWZxudtX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.TelegramBotDatabase2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testDatabase.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Database&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mac/Documents/project-codes/multi-languages/KeymastersInDevelopment&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.25948718&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Database/DatabaseFiles" />
+      <recent name="D:\project-codes\multi-languages\KeymastersInDevelopment\Database\DatabaseClassesJava\lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Keymaster's" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01047846-ff8c-48da-a0da-0ab9ce976eba" name="Changes" comment="" />
+      <created>1710950636155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710950636155</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>
