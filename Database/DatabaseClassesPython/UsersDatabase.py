@@ -5,129 +5,58 @@ This code was written by echo complex (https://t.me/echoscomplex)
 License - GNU GPLv2 Keymaster's © 2024 (CEO - echo complex (https://t.me/echoscomplex))
 All rights reserved.
 
+P.S. Command to create Database: CREATE TABLE users (username TEXT PRIMARY KEY, language VARCHAR(2) NOT NULL, chat_id INTEGER,  password TEXT NOT NULL)
+
 """
 
 
 
 """ IMPORTS """
-from sqlite3 import Connection
-from hashlib import sha256
-
+import jpype
+from os import getcwd
 
 
 class UsersDatabase:
     def __init__ (self, username: str) -> None:
-        self.__connection = Connection("Database/Users.db");
-        self.__cursor = self.__connection.cursor();
-        self.__username: str = username;
+        self.__class = jpype.JClass("UsersDatabase");  # Get Java Class
+        self.__Database = self.__class(username, ('%s/Database/DatabaseFiles/Users.db' % getcwd()));  # Init class
 
     def __del__ (self) -> None:
-        self.__connection.close();
+        self.__Database.closeConnection();
 
     @staticmethod
-    def __hashPassword (password: str) -> str:
-        return sha256(password.encode('utf-8')).hexdigest();
-
-    @staticmethod
-    def findUsernameByChatId (self, chat_id: int) -> str:
-        connection = Connection("Users.db");
-        cursor = connection.cursor();
-        cursor.execute(
-            """
-            SELECT username
-            FROM users
-            WHERE chat_id = ?
-            """, (chat_id,));
-        username: str = self.__cursor.fetchone()[0];
-        connection.close();
-        if (len(username) == 0):
+    def findUsernameByChatID (chat_id: int) -> str:
+        Class = jpype.JClass("UsersDatabase");  # Get Java Class
+        username: str = Class.findUsernameByChatID(chat_id, ('%s/Database/DatabaseFiles/Users.db' % getcwd()));
+        if (username == ""):
             raise Exception("NO USERNAME BY THIS CHAT_ID IN DATABASE");
         return username;
 
-    def addUser (self, language: str, email, password) -> None:
-        hashPassword: str = self.__hashPassword(password);
-        self.__cursor.execute(
-            """
-            INSERT OR IGNORE INTO users (username, language, email, password) 
-            VALUES (?, ?, ?, ?)
-            """,
-            (self.__username, language, email, hashPassword));
-        self.__connection.commit();
+    @staticmethod
+    def checkChatID(chat_id: int) -> bool:
+        Class = jpype.JClass("UsersDatabase");  # Get Java Class
+        username: str = Class.findUsernameByChatID(chat_id, ('%s/Database/DatabaseFiles/Users.db' % getcwd()));
+        return username == "";
+
+    def addUser (self, language: str, password) -> None:
+        self.__Database.addUser(language, password);
 
     def setLanguage (self, language: str) -> None:
-        self.__cursor.execute(
-            """
-            UPDATE users
-            SET language = ?
-            WHERE username = ?
-            """, (language, self.__username));
-        self.__connection.commit();
+        self.__Database.setLanguage(language);
 
     def getLanguage (self) -> str:
-        self.__cursor.execute(
-            """
-            SELECT language
-            FROM users
-            WHERE username = ?
-            """, (self.__username,));
-        language: str = self.__cursor.fetchone()[0];
+        language: str = self.__Database.getLanguage();
         return language;
 
-    def setEmail (self, email: str) -> None:
-        self.__cursor.execute(
-            """
-            UPDATE users
-            SET email = ?
-            WHERE username = ?
-            """, (email, self.__username));
-        self.__connection.commit();
-
-    def getEmail (self) -> str:
-        self.__cursor.execute(
-            """
-            SELECT email
-            FROM users
-            WHERE username = ?
-            """, (self.__username,));
-        email: str = self.__cursor.fetchone()[0];
-        return email;
-
     def setPassword (self, password: str) -> None:
-        hashPassword: str = self.__hashPassword(password);
-        self.__cursor.execute(
-            """
-            UPDATE users
-            SET password = ?
-            WHERE username = ?
-            """, (hashPassword, self.__username));
-        self.__connection.commit();
+        self.__Database.setPassword(password);
 
     def authenticate (self, password: str) -> bool:
-        self.__cursor.execute(
-            """
-            SELECT password
-            FROM users
-            WHERE username = ?
-            """, (self.__username,));
-        hashPasswordInDatabase: str = self.__cursor.fetchone()[0];
-        hashPasswordToCheck: str = self.__hashPassword(password);
-        return hashPasswordInDatabase == hashPasswordToCheck;
+        return self.__Database.authenticate(password);
 
+    def setChatID (self, chatID: int) -> None:
+        self.__Database.setChatID(chatID);
 
-
-
-
-if (__name__ == "__main__"):
-    unit = UsersDatabase("mrPenis");
-    # unit.addUser("RUR", None, "NNIIGIGIIG");
-    print(unit.authenticate("NNIIGIGIIG"));
-
-    # con = Connection("users.db");
-    # cur = con.cursor();
-    # cur.execute(""" SELECT * FROM users """);
-    # print(cur.fetchall());
-
-    # con = Connection("users.db");
-    # cur = con.cursor();
-    # cur.execute(""" CREATE TABLE users (username TEXT PRIMARY KEY, language VARCHAR(2) NOT NULL, chat_id INTEGER, email TEXT, password TEXT NOT NULL) """);
-    # con.commit();
+    def getChatID (self) -> int:
+        chat_id: int = self.__Database.setChatID();
+        return chat_id;

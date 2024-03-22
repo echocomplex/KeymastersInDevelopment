@@ -10,7 +10,12 @@ P.S. Command to create Database: CREATE TABLE AnyUsernameKalMamba4Exaple (servic
 */
 
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,10 +36,10 @@ public class PasswordDatabase {
     public void addUser () {
         String query = String.format(
                 """
-                CREATE TABLE IF NOT EXISTS "%s" (service_name TEXT PRIMARY KEY, password TEXT NOT NULL)
+                CREATE TABLE IF NOT EXISTS "%s" (service_name TEXT NOT NULL, password TEXT NOT NULL)
                 """, this.username
         );
-        try (PreparedStatement statement = connection.prepareStatement(query)) {
+        try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -48,7 +53,7 @@ public class PasswordDatabase {
                 VALUES (?, ?)
                 """, this.username
         );
-        try (PreparedStatement statement = connection.prepareStatement(query)) {
+        try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.setString(1, serviceName);
             statement.setString(2, servicePassword);
             statement.executeUpdate();
@@ -80,16 +85,16 @@ public class PasswordDatabase {
         return allRows;
     }
 
-    public void deletePassword (String serviceName) {
+    public void deletePassword (String serviceName, String password) {
         String query = String.format(
                 """
                 DELETE FROM %s
-                WHERE service_name = ?
-                LIMIT 1
+                WHERE service_name = ? AND password = ?
                 """, this.username
         );
-        try (PreparedStatement statement = connection.prepareStatement(query)) {
+        try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.setString(1, serviceName);
+            statement.setString(2, password);
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

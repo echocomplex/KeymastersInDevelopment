@@ -5,9 +5,6 @@ This code was written by echo complex (https://t.me/echoscomplex)
 License - GNU GPLv2 Keymaster's © 2024 (CEO - echo complex (https://t.me/echoscomplex))
 All rights reserved.
 
-
-ИЗМЕНИТЬ БАЗУ ДАННЫХ!!!!!!!!!!!!! ТАМ PRIMARY_KEY!!!!!!!!!!!!!
-
 """
 
 
@@ -38,23 +35,5 @@ class PasswordsDatabase:
             result.append(tuple(string_row));
         return tuple(result);
 
-    def deletePassword (self, serviceName: str) -> None:
-        self.__Database.deletePassword(serviceName);
-
-
-if (__name__ == "__main__"):
-    unit = PasswordsDatabase("mrKalMamba");
-    # unit.addUser();
-    # unit.addPassword("Yandex", "KirillAndrianov2005");
-    # unit.deletePassword("Yandex");
-    print(unit.getAll());
-
-    # con = Connection("Passwords.db");
-    # cur = con.cursor();
-    # cur.execute(""" SELECT * FROM users """);
-    # print(cur.fetchall());
-
-    # con = Connection("Passwords.db");
-    # cur = con.cursor();
-    # cur.execute(""" CREATE TABLE mrPenis (service_name TEXT, password TEXT NOT NULL) """);
-    # con.commit();
+    def deletePassword (self, serviceName: str, password: str) -> None:
+        self.__Database.deletePassword(serviceName, password);
