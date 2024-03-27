@@ -3,15 +3,17 @@
 }
 
 body {
-	background-color: #45A29E;
+	background-color: #61892F;
 	margin: 0;
 	margin-top: 0;
 }
 
 header {
+	display: flex;
+	justify-content: center;
 	margin: 0;
 	padding: 0;
-	background-color: #0B0C10;
+	background-color: #222629;
 	align-items: center;
 }
 
@@ -26,25 +28,18 @@ header {
 }
 
 .navbar-menu a {
-	color: #CCD0CF;
+	color: #C4C4C4;
 	text-align: center;
 	font-size: 20px;
-	font-family: "InterTight-BoldItalic";
+	font-family: "Mona-Sans-BlackWideItalic";
 	padding: 20px;
   	text-decoration: none;
-  	font-weight: bold;
   	display: inline-block;	
 }
 
 .navbar-menu a:hover {
-	color: #0B0C10;
-	background-color: #66FCF1;
-	transition: all 0.15s ease;
-}
-
-#passwords:hover {
-color: #0B0C10;
-	background-color: #66FCF1;
+	color: #222629;
+	background-color: #86C232;
 	transition: all 0.15s ease;
 }
 
@@ -61,7 +56,7 @@ color: #0B0C10;
 }
 
 .welcome {
-	background-color: #0B0C10;
+	background-color: #222629;
 	margin: 0px;
 	align-items: center;
 }
@@ -71,12 +66,13 @@ color: #0B0C10;
 	padding: 0px;
 	text-align: center;
 	font-size: 60px;
-	color: #CCD0CF;
-	font-family: "InterTight-ExtraLight";
+	color: #C4C4C4;
+	font-family: "IBMPlexSans-Bold";
 }
 
 .welcome b {
-	color: #66FCF1;
+	color: #86C232;
+	font-family: "Mona-Sans-BlackWideItalic";
 }
 
 .whatiskeymasters {
@@ -86,33 +82,45 @@ color: #0B0C10;
 	width: 700px;
 	display: inline-block;
 	font-size: 40px;
-	font-family: "InterTight-ExtraLight";
-	border: 5px dashed #45A29E;
+	border: 5px solid #86C232;
 	border-radius: 20px;
 }
 
-.whatiskeymasters2 {
-	margin: 20px;
-	padding: 20px;
+.whatiskeymasters p {
 	align-items: center;
-	width: 700px;
-	display: inline-block;
-	font-size: 40px;
-	font-family: "InterTight-ExtraLight";
-	border: 5px dashed #45A29E;
-	border-radius: 20px;
+	font-family: "IBMPlexSans-ExtraLight";
+	color: #C4C4C4;
+}
+
+.whatiskeymasters b {
+	color: #86C232;
+	font-family: "Mona-Sans-BlackWideItalic";
+}
+
+.welcome-logo {
+	margin: 30px;
+	padding: 0;
+	background-color: aliceblue;
+	width: 400px;
 }
 
 @font-face {
-	font-family: "InterTight-BoldItalic";
-	src: url("../fonts/Inter Tight/InterTight-BoldItalic.ttf") format("truetype");
+	font-family: "Mona-Sans-BlackWideItalic";
+	src: url("../fonts/Mono-Sans/Mona-Sans-BlackWideItalic.otf") format("truetype");
 	font-style: normal; 
 	font-weight: normal; 
 } 
 
 @font-face {
-	font-family: "InterTight-ExtraLight";
-	src: url("../fonts/Inter Tight/InterTight-Thin.ttf") format("truetype");
+	font-family: "IBMPlexSans-Bold";
+	src: url("../fonts/IBM Plex/IBMPlexSans-Bold.ttf") format("truetype");
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+@font-face {
+	font-family: "IBMPlexSans-ExtraLight";
+	src: url("../fonts/IBM Plex/IBMPlexSans-Medium.ttf") format("truetype");
 	font-style: normal; 
 	font-weight: normal; 
 } 
