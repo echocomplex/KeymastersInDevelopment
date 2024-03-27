@@ -1,5 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-	background-color: #CCD0CF;
+	background-color: #45A29E;
 	margin: 0;
 	margin-top: 0;
 }
@@ -7,7 +11,8 @@ body {
 header {
 	margin: 0;
 	padding: 0;
-	background-color: #06141B;
+	background-color: #0B0C10;
+	align-items: center;
 }
 
 .navbar-menu {
@@ -28,32 +33,74 @@ header {
 	padding: 20px;
   	text-decoration: none;
   	font-weight: bold;
-  	display: inline-block;
+  	display: inline-block;	
+}
+
+.navbar-menu a:hover {
+	color: #0B0C10;
+	background-color: #66FCF1;
+	transition: all 0.15s ease;
+}
+
+#passwords:hover {
+color: #0B0C10;
+	background-color: #66FCF1;
+	transition: all 0.15s ease;
 }
 
 .mainlogo {
 	align-items: center;
 	margin: 0;
+	padding: 0;
 }
 
 .mainlogo img {
-	margin-top: 0px;
+	margin: 0px;
 	max-width: 100%;
 	max-height: 100%;
 }
 
 .welcome {
-	background-color: #06141B;
-	margin-top: 0px;
+	background-color: #0B0C10;
+	margin: 0px;
+	align-items: center;
 }
 
 .welcome h1 {
-	margin-top: 20px;
-	margin-bottom: 0px;
+	margin: 0px;
+	padding: 0px;
 	text-align: center;
 	font-size: 60px;
 	color: #CCD0CF;
 	font-family: "InterTight-ExtraLight";
+}
+
+.welcome b {
+	color: #66FCF1;
+}
+
+.whatiskeymasters {
+	margin: 20px;
+	padding: 20px;
+	align-items: center;
+	width: 700px;
+	display: inline-block;
+	font-size: 40px;
+	font-family: "InterTight-ExtraLight";
+	border: 5px dashed #45A29E;
+	border-radius: 20px;
+}
+
+.whatiskeymasters2 {
+	margin: 20px;
+	padding: 20px;
+	align-items: center;
+	width: 700px;
+	display: inline-block;
+	font-size: 40px;
+	font-family: "InterTight-ExtraLight";
+	border: 5px dashed #45A29E;
+	border-radius: 20px;
 }
 
 @font-face {
