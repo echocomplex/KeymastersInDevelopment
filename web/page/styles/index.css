@@ -40,9 +40,9 @@ header {
   	display: inline-block;	
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
 	.navbar-menu a {
-		font-size: 15px;
+		font-size: 17px;
 	}	
 }
 
@@ -134,14 +134,14 @@ footer {
 
 @font-face {
 	font-family: "IBMPlexSans-Bold";
-	src: url("../fonts/IBM Plex/IBMPlexSans-Bold.ttf") format("truetype");
+	src: url("../fonts/SuisseIntl-Book.otf") format("truetype");
 	font-style: normal; 
 	font-weight: normal; 
 } 
 
 @font-face {
 	font-family: "IBMPlexSans-ExtraLight";
-	src: url("../fonts/IBM Plex/IBMPlexSans-Bold.ttf") format("truetype");
+	src: url("../fonts/SuisseIntl-Book.otf") format("truetype");
 	font-style: normal; 
 	font-weight: normal; 
 } 
