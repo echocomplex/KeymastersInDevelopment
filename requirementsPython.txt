@@ -1,0 +1,3 @@
+jpype1
+pyTelegramBotAPI
+Crypto
