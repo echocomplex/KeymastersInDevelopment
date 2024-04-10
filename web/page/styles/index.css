@@ -13,7 +13,7 @@ header {
 	justify-content: center;
 	margin: 0;
 	padding: 0;
-	background-color: #61892F;
+	background-color: #222629;
 	align-items: center;
 }
 
@@ -31,24 +31,17 @@ header {
 
 .navbar-menu a {
 	width: 100%;
-	color: #222629;
+	color: #86C232;
 	text-align: center;
 	font-family: "Mona-Sans-BlackWideItalic";
-	font-size: 20px;
-	padding: 20px;
+	font-size: 1.3vw;
+	padding: 1.5vw;
   	text-decoration: none;
   	display: inline-block;	
 }
 
-@media (max-width: 1440px) {
-	.navbar-menu a {
-		font-size: 17px;
-	}	
-}
-
 .navbar-menu a:hover {
-	color: #86C232;;
-	background-color: #222629;
+	color: #61892F;
 	transition: all 0.15s ease;
 }
 
