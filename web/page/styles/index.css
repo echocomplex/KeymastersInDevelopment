@@ -1,27 +1,24 @@
 * {
 	box-sizing: border-box;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	background-color: #222629;
-	margin: 0;
-	margin-top: 0;
 }
 
 header {
 	display: flex;
 	justify-content: center;
-	margin: 0;
-	padding: 0;
 	background-color: #222629;
 	align-items: center;
 }
 
 .navbar-menu {
-	margin: 0;
 	text-align: center;
 	list-style-type: none;
-	font-size: 0;
 }
 
 .navbar-menu li {
@@ -29,21 +26,97 @@ header {
 	width: 100%;
 }
 
-.navbar-menu a {
+#PasswordsHeaderButton {
+	background: linear-gradient(#86C232 0 0) 100% 100% /var(--t, 0) 0.2vw no-repeat;
+	transition: 0.5s;
+	display: inline-block;
 	width: 100%;
-	color: #86C232;
+	color: #C4C4C4;
 	text-align: center;
 	font-family: "Mona-Sans-BlackWideItalic";
 	font-size: 1.3vw;
-	padding: 1.5vw;
+	padding: 1vw;
   	text-decoration: none;
-  	display: inline-block;	
 }
 
-.navbar-menu a:hover {
-	color: #61892F;
-	transition: all 0.3s ease;
+#PasswordsHeaderButton:hover {
+	--t: 100%;
+	color: #86C232;
 }
+
+#VaultHeaderButton {
+	background: linear-gradient(#86C232 0 0) 0 100% /var(--t, 0) 0.2vw no-repeat;
+	transition: 0.5s;
+	display: inline-block;
+	width: 100%;
+	color: #C4C4C4;
+	text-align: center;
+	font-family: "Mona-Sans-BlackWideItalic";
+	font-size: 1.3vw;
+	padding: 1vw;
+  	text-decoration: none;
+}
+
+#VaultHeaderButton:hover {
+	--t: 100%;
+	color: #86C232;
+}
+
+#CryptoHeaderButton {
+	background: linear-gradient(#86C232 0 0) bottom /var(--t, 0) 0.2vw no-repeat;
+	transition: 0.5s;
+	display: inline-block;
+	width: 100%;
+	color: #C4C4C4;
+	text-align: center;
+	font-family: "Mona-Sans-BlackWideItalic";
+	font-size: 1.3vw;
+	padding: 1vw;
+  	text-decoration: none;
+}
+
+#CryptoHeaderButton:hover {
+	--t: 100%;
+	color: #86C232;
+}
+
+#SCAMGuardHeaderButton {
+	background: linear-gradient(#86C232 0 0) 100% 100% /var(--t, 0) 0.2vw no-repeat;
+	transition: 0.5s;
+	display: inline-block;
+	width: 100%;
+	color: #C4C4C4;
+	text-align: center;
+	font-family: "Mona-Sans-BlackWideItalic";
+	font-size: 1.3vw;
+	padding: 1vw;
+  	text-decoration: none;
+}
+
+#SCAMGuardHeaderButton:hover {
+	--t: 100%;
+	color: #86C232;
+}
+
+
+#SocialHeaderButton {
+	background: linear-gradient(#86C232 0 0) 0 100% /var(--t, 0) 0.2vw no-repeat;
+	transition: 0.5s;
+	display: inline-block;
+	width: 100%;
+	color: #C4C4C4;
+	text-align: center;
+	font-family: "Mona-Sans-BlackWideItalic";
+	font-size: 1.3vw;
+	padding: 1vw;
+  	text-decoration: none;
+}
+
+#SocialHeaderButton:hover {
+	--t: 100%;
+	color: #86C232;
+}
+
 
 .mainlogo {
 	align-items: center;
@@ -62,20 +135,18 @@ header {
 
 .welcome {
 	background-color: #222629;
-	margin: 40px 0 0 0;
-	font-size: 0;
+	margin: 1vw 0 0 0;
 }
 
 .welcome h1 {
-	margin: 0px;
-	padding: 0px;
 	text-align: center;
-	font-size: 60px;
+	font-size: 3.5vw;
 	color: #C4C4C4;
-	font-family: "IBMPlexSans-Bold";
+	font-family: "SuisseIntl-Book";
 }
 
 .welcome b {
+	font-size: 3.5vw;
 	color: #86C232;
 	font-family: "Mona-Sans-BlackWideItalic";
 }
@@ -87,31 +158,44 @@ header {
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0px auto 0 auto;
-	font-size: 0;
+    margin: 0 auto 0 auto;
 }
 
 .whatiskeymasters {
-	margin-right: 80px;
-	margin-left: 30px;
-    font-size: 40px;
+	margin-right: 4vw;
+	margin-left: 2vw;
     text-align: left;
 }
 
 .whatiskeymasters p {
-    font-family: "IBMPlexSans-ExtraLight";
+	font-size: 2.5vw;
+    font-family: "SuisseIntl-Book";
     color: #C4C4C4;
-	margin: 0;
 }
 
 .whatiskeymasters b {
+	font-size: 2.5vw;
     color: #86C232;
     font-family: "Mona-Sans-BlackWideItalic";
 }
 
 .welcome-logo {
-    padding: 0;
-    width: 400px;
+	max-width: 1000px;
+	max-height: 1000px;
+    width: 20vw;
+	height: 20vw;
+}
+
+.some-about-us {
+	display: flex;
+	padding: 5vh;
+}
+
+.some-about-us h1 {
+	display: inline-block;
+	margin: 0 auto 0 auto;
+	font-size: 3.5vw;
+	font-family: "SuisseIntl-Book";
 }
 
 footer {
@@ -126,14 +210,7 @@ footer {
 } 
 
 @font-face {
-	font-family: "IBMPlexSans-Bold";
-	src: url("../fonts/SuisseIntl-Book.otf") format("truetype");
-	font-style: normal; 
-	font-weight: normal; 
-} 
-
-@font-face {
-	font-family: "IBMPlexSans-ExtraLight";
+	font-family: "SuisseIntl-Book";
 	src: url("../fonts/SuisseIntl-Book.otf") format("truetype");
 	font-style: normal; 
 	font-weight: normal; 
