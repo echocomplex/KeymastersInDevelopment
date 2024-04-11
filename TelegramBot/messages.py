@@ -54,6 +54,11 @@ scam_ms = {
     "EN": "<b>leha loh</b>",
 }
 
+empty_menu_warning = {
+    "RU": "",
+    "EN": ""
+}
+
 
 
 
