@@ -21,9 +21,9 @@ import java.sql.PreparedStatement;
 
 public class TelegramBotDatabase {
     private Connection connection;
-    private int chatID;
+    private long chatID;
 
-    public TelegramBotDatabase (int chatID, String databasePath) {
+    public TelegramBotDatabase (long chatID, String databasePath) {
         try {
             this.connection = DriverManager.getConnection("jdbc:sqlite:" + databasePath);
             this.chatID = chatID;
@@ -40,7 +40,7 @@ public class TelegramBotDatabase {
                 VALUES (?, ?, ?)
                 """;
         try (PreparedStatement statement = this.connection.prepareStatement(query)) {
-            statement.setInt(1, this.chatID);
+            statement.setLong(1, this.chatID);
             statement.setString(2, "RU");
             statement.setBoolean(3, false);
             statement.executeUpdate();
@@ -58,7 +58,7 @@ public class TelegramBotDatabase {
                 """;
         try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.setString(1, language);
-            statement.setInt(2, this.chatID);
+            statement.setLong(2, this.chatID);
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -74,7 +74,7 @@ public class TelegramBotDatabase {
                 """;
         String language;
         try (PreparedStatement statement = this.connection.prepareStatement(query)) {
-            statement.setInt(1, this.chatID);
+            statement.setLong(1, this.chatID);
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
                 language = resultSet.getString("language");
@@ -98,7 +98,7 @@ public class TelegramBotDatabase {
                 """;
         try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.setBoolean(1, status);
-            statement.setInt(2, this.chatID);
+            statement.setLong(2, this.chatID);
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -114,7 +114,7 @@ public class TelegramBotDatabase {
                 """;
         boolean loginStatus;
         try (PreparedStatement statement = this.connection.prepareStatement(query)) {
-            statement.setInt(1, this.chatID);
+            statement.setLong(1, this.chatID);
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
                 loginStatus = resultSet.getBoolean("login_status");

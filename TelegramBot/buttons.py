@@ -30,31 +30,31 @@ main_menu_buttons = {
 
 passwords_buttons = {
     "RU": {
-        "Генератор случайных паролей": "generation",
-        "Генератор паролей из текста": "text",
-        "Анализ паролей на надежность": "analiz",
+        "Генератор случайных паролей": "random_passwords$1000",
+        "Генератор паролей из текста": "text_passwords",
+        "Анализ паролей на надежность": "analysis",
     },
     "EN": {
-        "Generation random passwords": "generation",
-        "Generation passwords from text": "text",
-        "Analized passwords": "analiz",
+        "Generation random passwords": "random_passwords$1000",
+        "Generation passwords from text": "text_passwords",
+        "Analized passwords": "analysis",
     },
 }
 
 generation_buttons = {
     "RU": {
-        "Нижний регистр": "down",
-        "Верхний регистр": "up",
-        "Цифры": "digit",
-        "Специальные цифры": "special",
-        "Сгенерировать пароль": "generate",
+        ("Нижний регистр", "Нижний регистр ✅"): "random_passwords$",
+        ("Верхний регистр", "Верхний регистр ✅"): "random_passwords$",
+        ("Цифры", "Цифры ✅"): "random_passwords$",
+        ("Специальные символы", "Специальные символы ✅"): "random_passwords$",
+        "Сгенерировать пароль": "generate_password$",
     },
     "EN": {
         "Lowercase": "down",
         "Uppercase": "up",
         "Digits": "digit",
         "Special digits": "special",
-        "Generate password": "generate",
+        "Generate password": "generate_prd_",
 
     },
 }

@@ -1,7 +1,8 @@
 import telebot
 from telebot import types
 from TelegramBot.privacy import TOKEN
-from Database.TelegramBotDatabase import TelegramBotDatabase
+from Database.DatabaseClassesPython.Necessary import startDatabase, shutdownDatabase
+from Database.DatabaseClassesPython.TelegramBotDatabase import TelegramBotDatabase
 from TelegramBot.buttons import *
 from TelegramBot.messages import *
 
@@ -87,16 +88,27 @@ def callback(call):
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                               text=scam_ms[language], parse_mode="html", reply_markup=markup)
 
-    elif call.data in passwords_buttons[language].values():
-        if call.data == "generation":
-            markup = types.InlineKeyboardMarkup()
-            for text, callback in generation_buttons[language].items():
-                btn = types.InlineKeyboardButton(text=text, callback_data=callback)
-                markup.add(btn)
-            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
-                                  text=passwords_ms[language],parse_mode="html", reply_markup=markup)
-
+    elif "random_passwords$" in call.data:
+        menu_info = call.data.split("$")[1]
+        buttons = tuple(generation_buttons[language].items())
+        text_list = []
+        for i in range(0, 4):
+            text_list.append(buttons[i][0][int(menu_info[i])])
+        
+            # markup = types.InlineKeyboardMarkup()
+            # lowercase_button = types.InlineKeyboardButton(text=buttons[0][0], callback_data=buttons[0][1]+)
+            # bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+            #                       text=passwords_ms[language],parse_mode="html", reply_markup=markup)
+        
+    elif "generate_password" in call.data:
+        menu_info = call.data.split("_")[1]
+        if (menu_info == "0000"):
+            bot.answer_callback_query(call.id, empty_menu_warning[language], show_alert=True)
+            return
+            
 
 def startBot():
+    startDatabase()
     print("Keymaster's Bot is started and ready to work.")
     bot.polling(none_stop=True, interval=0)
+    shutdownDatabase()

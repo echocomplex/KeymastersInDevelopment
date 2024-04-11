@@ -47,7 +47,7 @@ public class UsersDatabase {
         return hashedPassword;
     }
 
-    public static String findUsernameByChatID (int chatID, String databasePath) {
+    public static String findUsernameByChatID (long chatID, String databasePath) {
         String username;
         try {
             Connection connection = DriverManager.getConnection("jdbc:sqlite:"+databasePath);
@@ -58,7 +58,7 @@ public class UsersDatabase {
                      WHERE chat_id = ?
                      """;
             try (PreparedStatement statement = connection.prepareStatement(query)) {
-                statement.setInt(1, chatID);
+                statement.setLong(1, chatID);
                 ResultSet result = statement.executeQuery();
                 if (result.next()) {
                     username = result.getString("username");
@@ -177,7 +177,7 @@ public class UsersDatabase {
         return hashedPassword.equals(databaseHash);
     }
 
-    public void setChatID (int chatID) {
+    public void setChatID (long chatID) {
         String query =
                 """
                 UPDATE users
@@ -185,7 +185,7 @@ public class UsersDatabase {
                 WHERE username = ?
                 """;
         try (PreparedStatement statement = this.connection.prepareStatement(query)) {
-            statement.setInt(1, chatID);
+            statement.setLong(1, chatID);
             statement.setString(2, this.username);
             statement.executeUpdate();
         } catch (SQLException e) {
@@ -193,19 +193,19 @@ public class UsersDatabase {
         }
     }
 
-    public int getChatID () {
+    public long getChatID () {
         String query =
                 """
                         SELECT chat_id
                         FROM users
                         WHERE username = ?
                         """;
-        int chatID;
+        long chatID;
         try (PreparedStatement statement = this.connection.prepareStatement(query)) {
             statement.setString(1, this.username);
             ResultSet result = statement.executeQuery();
             if (result.next()) {
-                chatID = result.getInt("chat_id");
+                chatID = result.getLong("chat_id");
             } else {
                 chatID = 0;
             }
