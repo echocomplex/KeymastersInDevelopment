@@ -89,19 +89,20 @@ def callback(call):
                               text=scam_ms[language], parse_mode="html", reply_markup=markup)
 
     elif "random_passwords$" in call.data:
-        menu_info = call.data.split("$")[1]
-        buttons = tuple(generation_buttons[language].items())
-        text_list = []
+        menu_info: str = call.data.split("$")[1]
+        buttons: tuple = tuple(generation_buttons[language].items())
+        markup = types.InlineKeyboardMarkup()
         for i in range(0, 4):
-            text_list.append(buttons[i][0][int(menu_info[i])])
-        
-            # markup = types.InlineKeyboardMarkup()
-            # lowercase_button = types.InlineKeyboardButton(text=buttons[0][0], callback_data=buttons[0][1]+)
-            # bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
-            #                       text=passwords_ms[language],parse_mode="html", reply_markup=markup)
+            callback = "random_passwords$" + menu_info[:i:] + str(int(not(bool(int(menu_info[i]))))) + menu_info[i+1::]
+            btn = types.InlineKeyboardButton(text=buttons[i][0][int(menu_info[i])], callback_data=callback)
+            markup.add(btn)
+        generate_password_btn = types.InlineKeyboardButton(text=buttons[-1][0], callback_data=buttons[-1][1] + menu_info)
+        markup.add(generate_password_btn)
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                              text=passwords_ms[language],parse_mode="html", reply_markup=markup)
         
     elif "generate_password" in call.data:
-        menu_info = call.data.split("_")[1]
+        menu_info = call.data.split("$")[1]
         if (menu_info == "0000"):
             bot.answer_callback_query(call.id, empty_menu_warning[language], show_alert=True)
             return
