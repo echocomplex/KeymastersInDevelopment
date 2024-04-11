@@ -199,6 +199,25 @@ header {
 	color: #C4C4C4;
 }
 
+.KeymastersPasswords {
+	display: flex;
+	padding: 5vh;
+}
+
+.KeymastersPasswords h1 {
+	display: inline-block;
+	margin: 0 auto 0 auto;
+	font-size: 3.5vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C4C4C4;
+}
+
+.KeymastersPasswords b {
+	font-size: 3.5vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #B51A2B;
+}
+
 footer {
 	background-color: #61892F;
 }
