@@ -16,7 +16,18 @@ header {
 	align-items: center;
 }
 
+.signin-signup {
+	display: flex;
+	width: 100%;
+	background-color: #86C232;
+}
+
 .navbar-menu {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: #222629;
+	align-items: center;
 	text-align: center;
 	list-style-type: none;
 }
@@ -28,7 +39,7 @@ header {
 
 #PasswordsHeaderButton {
 	background: linear-gradient(#86C232 0 0) 100% 100% /var(--t, 0) 0.2vw no-repeat;
-	transition: 0.5s;
+	transition: 0.3s;
 	display: inline-block;
 	width: 100%;
 	color: #C4C4C4;
@@ -46,7 +57,7 @@ header {
 
 #VaultHeaderButton {
 	background: linear-gradient(#86C232 0 0) 0 100% /var(--t, 0) 0.2vw no-repeat;
-	transition: 0.5s;
+	transition: 0.3s;
 	display: inline-block;
 	width: 100%;
 	color: #C4C4C4;
@@ -64,7 +75,7 @@ header {
 
 #CryptoHeaderButton {
 	background: linear-gradient(#86C232 0 0) bottom /var(--t, 0) 0.2vw no-repeat;
-	transition: 0.5s;
+	transition: 0.3s;
 	display: inline-block;
 	width: 100%;
 	color: #C4C4C4;
@@ -82,7 +93,7 @@ header {
 
 #SCAMGuardHeaderButton {
 	background: linear-gradient(#86C232 0 0) 100% 100% /var(--t, 0) 0.2vw no-repeat;
-	transition: 0.5s;
+	transition: 0.3s;
 	display: inline-block;
 	width: 100%;
 	color: #C4C4C4;
@@ -101,7 +112,7 @@ header {
 
 #SocialHeaderButton {
 	background: linear-gradient(#86C232 0 0) 0 100% /var(--t, 0) 0.2vw no-repeat;
-	transition: 0.5s;
+	transition: 0.3s;
 	display: inline-block;
 	width: 100%;
 	color: #C4C4C4;
@@ -120,10 +131,7 @@ header {
 
 .mainlogo {
 	align-items: center;
-	margin: 0;
-	padding: 0;
 	background-color: #222629;
-	font-size: 0;
 }
 
 .mainlogo img {
@@ -141,7 +149,7 @@ header {
 	text-align: center;
 	font-size: 3.5vw;
 	color: #C4C4C4;
-	font-family: "SuisseIntl-Book";
+	font-family: "Mona-Sans-BlackWideItalic";
 }
 
 .welcome b {
