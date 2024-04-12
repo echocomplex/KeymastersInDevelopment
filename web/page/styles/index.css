@@ -134,8 +134,7 @@ header {
 }
 
 .welcome {
-	background-color: #222629;
-	margin: 1vw 0 0 0;
+	margin-top: 1vw;
 }
 
 .welcome h1 {
@@ -162,6 +161,7 @@ header {
 }
 
 .whatiskeymasters {
+	display: inline-block;
 	margin-right: 4vw;
 	margin-left: 2vw;
     text-align: left;
@@ -186,28 +186,15 @@ header {
 	height: 20vw;
 }
 
-.some-about-us {
-	display: flex;
-	padding: 5vh;
-}
-
-.some-about-us h1 {
-	display: inline-block;
-	margin: 0 auto 0 auto;
-	font-size: 3.5vw;
-	font-family: "SuisseIntl-Book";
-	color: #C4C4C4;
-}
-
 .KeymastersPasswords {
-	display: flex;
-	padding: 5vh;
+	margin-top: 1vw;
 }
 
 .KeymastersPasswords h1 {
-	display: inline-block;
+	display: block;
 	margin: 0 auto 0 auto;
 	font-size: 3.5vw;
+	text-align: center;
 	font-family: "Mona-Sans-BlackWideItalic";
 	color: #C4C4C4;
 }
@@ -216,6 +203,227 @@ header {
 	font-size: 3.5vw;
 	font-family: "Mona-Sans-BlackWideItalic";
 	color: #B51A2B;
+}
+
+.KeymastersPasswordsItems {
+	max-width: 1728px;
+	max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.what-is-KP {
+	margin-right: 4vw;
+	margin-left: 2vw;
+    text-align: left;
+	color: #C4C4C4;
+}
+
+.what-is-KP p {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	text-align: left;
+}
+
+.what-is-KP b {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	color: #B51A2B;
+}
+
+.KeymastersVault {
+	margin-top: 1vw;
+}
+
+.KeymastersVault h1 {
+	display: block;
+	margin: 0 auto 0 auto;
+	font-size: 3.5vw;
+	text-align: center;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C4C4C4;
+}
+
+.KeymastersVault b {
+	font-size: 3.5vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #B79347;
+}
+
+.KeymastersVaultItems {
+	max-width: 1728px;
+	max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.what-is-KV {
+	margin-right: 4vw;
+	margin-left: 2vw;
+    text-align: left;
+	color: #C4C4C4;
+}
+
+.what-is-KV p {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	text-align: left;
+}
+
+.what-is-KV b {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	color: #B79347;
+}
+
+.KeymastersCrypto {
+	margin-top: 1vw;
+}
+
+.KeymastersCrypto h1 {
+	display: block;
+	margin: 0 auto 0 auto;
+	font-size: 3.5vw;
+	text-align: center;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C4C4C4;
+}
+
+.KeymastersCrypto b {
+	font-size: 3.5vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #77977D;
+}
+
+.KeymastersCryptoItems {
+	max-width: 1728px;
+	max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.what-is-KC {
+	margin-right: 4vw;
+	margin-left: 2vw;
+    text-align: left;
+	color: #C4C4C4;
+}
+
+.what-is-KC p {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	text-align: left;
+}
+
+.what-is-KC b {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	color: #77977D;
+}
+
+.KeymastersSCAMGuard {
+	margin-top: 1vw;
+}
+
+.KeymastersSCAMGuard h1 {
+	display: block;
+	margin: 0 auto 0 auto;
+	font-size: 3.5vw;
+	text-align: center;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C4C4C4;
+}
+
+.KeymastersSCAMGuard b {
+	font-size: 3.5vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #7B919C;
+}
+
+.KeymastersSCAMGuardItems {
+	max-width: 1728px;
+	max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.what-is-KS {
+	margin-right: 4vw;
+	margin-left: 2vw;
+    text-align: left;
+	color: #C4C4C4;
+}
+
+.what-is-KS p {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	text-align: left;
+}
+
+.what-is-KS b {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	color: #7B919C;
+}
+
+.KeymastersSocial{
+	margin-top: 1vw;
+}
+
+.KeymastersSocial h1 {
+	display: block;
+	margin: 0 auto 0 auto;
+	font-size: 3.5vw;
+	text-align: center;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C4C4C4;
+}
+
+.KeymastersSocial b {
+	font-size: 3.5vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #8D7797;
+}
+
+.KeymastersSocialItems {
+	max-width: 1728px;
+	max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.what-is-KSl {
+	margin-right: 4vw;
+	margin-left: 2vw;
+    text-align: left;
+	color: #C4C4C4;
+}
+
+.what-is-KSl p {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	text-align: left;
+}
+
+.what-is-KSl b {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	color: #7B919C;
 }
 
 footer {
