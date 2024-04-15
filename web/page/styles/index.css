@@ -16,12 +16,6 @@ header {
 	align-items: center;
 }
 
-.signin-signup {
-	display: flex;
-	width: 100%;
-	background-color: #86C232;
-}
-
 .navbar-menu {
 	display: flex;
 	width: 100%;
@@ -241,9 +235,31 @@ header {
 	font-size: 2.5vw;
 	color: #B51A2B;
 }
+.KeymastersPasswords li {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.KeymastersPasswords li a {
+	display: inline-block;
+	font-size: 2vw;
+	padding: 1vw;
+	color: #B51A2B;
+	text-decoration: none;
+	font-family: "Mona-Sans-BlackWideItalic";
+	background-color: #222629;
+	border: 0.3vw solid #B51A2B;
+	transition: 0.1s;
+}
+
+.KeymastersPasswords li a:hover {
+	color: #222629;
+	background-color: #B51A2B;
+}
 
 .KeymastersVault {
-	margin-top: 1vw;
+	margin-top: 5vw;
 }
 
 .KeymastersVault h1 {
@@ -290,8 +306,31 @@ header {
 	color: #B79347;
 }
 
+.KeymastersVault li {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.KeymastersVault li a {
+	display: inline-block;
+	font-size: 2vw;
+	padding: 1vw;
+	color: #B79347;
+	text-decoration: none;
+	font-family: "Mona-Sans-BlackWideItalic";
+	background-color: #222629;
+	border: 0.3vw solid #B79347;
+	transition: 0.1s;
+}
+
+.KeymastersVault li a:hover {
+	color: #222629;
+	background-color: #B79347;
+}
+
 .KeymastersCrypto {
-	margin-top: 1vw;
+	margin-top: 5vw;
 }
 
 .KeymastersCrypto h1 {
@@ -338,8 +377,31 @@ header {
 	color: #77977D;
 }
 
+.KeymastersCrypto li {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.KeymastersCrypto li a {
+	display: inline-block;
+	font-size: 2vw;
+	padding: 1vw;
+	color: #77977D;
+	text-decoration: none;
+	font-family: "Mona-Sans-BlackWideItalic";
+	background-color: #222629;
+	border: 0.3vw solid #77977D;
+	transition: 0.1s;
+}
+
+.KeymastersCrypto li a:hover {
+	color: #222629;
+	background-color: #77977D;
+}
+
 .KeymastersSCAMGuard {
-	margin-top: 1vw;
+	margin-top: 5vw;
 }
 
 .KeymastersSCAMGuard h1 {
@@ -386,8 +448,31 @@ header {
 	color: #7B919C;
 }
 
+.KeymastersSCAMGuard li {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.KeymastersSCAMGuard li a {
+	display: inline-block;
+	font-size: 2vw;
+	padding: 1vw;
+	color: #7B919C;
+	text-decoration: none;
+	font-family: "Mona-Sans-BlackWideItalic";
+	background-color: #222629;
+	border: 0.3vw solid #7B919C;
+	transition: 0.1s;
+}
+
+.KeymastersSCAMGuard li a:hover {
+	color: #222629;
+	background-color: #7B919C;
+}
+
 .KeymastersSocial{
-	margin-top: 1vw;
+	margin-top: 5vw;
 }
 
 .KeymastersSocial h1 {
@@ -431,11 +516,188 @@ header {
 .what-is-KSl b {
 	font-family: "SuisseIntl-Book";
 	font-size: 2.5vw;
-	color: #7B919C;
+	color: #8D7797;
+}
+
+.KeymastersSocial li {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.KeymastersSocial li a {
+	display: inline-block;
+	font-size: 2vw;
+	padding: 1vw;
+	color: #8D7797;
+	text-decoration: none;
+	font-family: "Mona-Sans-BlackWideItalic";
+	background-color: #222629;
+	border: 0.3vw solid #8D7797;
+	transition: 0.1s;
+}
+
+.KeymastersSocial li a:hover {
+	color: #222629;
+	background-color: #8D7797;
+}
+
+.KeymastersAPI {
+	margin-top: 5vw;
+}
+
+.KeymastersAPI h1 {
+	display: block;
+	margin: 0 auto 0 auto;
+	font-size: 3.5vw;
+	text-align: center;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C4C4C4;
+}
+
+.KeymastersAPI b {
+	font-size: 3.5vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C7BC1E;
+}
+
+.KeymastersAPIItems {
+	max-width: 1728px;
+	max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.what-is-KAPI {
+	margin-right: 4vw;
+	margin-left: 2vw;
+    text-align: left;
+	color: #C4C4C4;
+}
+
+.what-is-KAPI p {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	text-align: left;
+}
+
+.what-is-KAPI b {
+	font-family: "SuisseIntl-Book";
+	font-size: 2.5vw;
+	color: #C7BC1E;
+}
+
+.KeymastersAPI li {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.KeymastersAPI li a {
+	display: inline-block;
+	font-size: 2vw;
+	padding: 1vw;
+	color: #C7BC1E;
+	text-decoration: none;
+	font-family: "Mona-Sans-BlackWideItalic";
+	background-color: #222629;
+	border: 0.3vw solid #C7BC1E;
+	transition: 0.1s;
+}
+
+.KeymastersAPI li a:hover {
+	color: #222629;
+	background-color: #C7BC1E;
 }
 
 footer {
-	background-color: #61892F;
+	width: 100%;
+	height: 30vh;
+	margin-top: 10vh;
+	border-top: 0.3vw solid #C7BC1E;
+}
+
+footer h1 {
+	margin: 1vw;
+	font-size: 2.5vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #86C232;
+	text-align: center;
+}
+
+footer h2 {
+	margin: 1vw;
+	text-align: center;
+	font-size: 2vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C4C4C4;
+	font-weight: 100;
+}
+
+.KeymastersTeam {
+	font-weight: 100;
+	margin: 1vw;
+	text-align: center;
+	font-size: 2vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C4C4C4;
+}
+
+footer h3 {
+	font-weight: 100;
+	margin: 1vw;
+	text-align: center;
+	font-size: 1.5vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C4C4C4;
+}
+
+footer h3 a {
+	font-size: 1.5vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #86C232;
+}
+
+footer a {
+	font-size: 2vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #86C232;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #C7BC1E;
+}
+
+.KeymastersContacts {
+	font-weight: 100;
+	margin: 1vw;
+	text-align: center;
+	font-size: 2vw;
+	font-family: "Mona-Sans-BlackWideItalic";
+	color: #C4C4C4;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 0 auto;
+	border-top: 0.3vw solid #C7BC1E;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 0 auto;
+	border-top: 0.3vw solid #C7BC1E;
 }
 
 @font-face {
