@@ -204,7 +204,7 @@ header {
 .KeymastersPasswords b {
 	font-size: 3.5vw;
 	font-family: "Mona-Sans-BlackWideItalic";
-	color: #B51A2B;
+	color: #c6515e;
 }
 
 .KeymastersPasswordsItems {
@@ -233,7 +233,7 @@ header {
 .what-is-KP b {
 	font-family: "SuisseIntl-Book";
 	font-size: 2.5vw;
-	color: #B51A2B;
+	color: #c6515e;
 }
 .KeymastersPasswords li {
 	display: inline-block;
@@ -245,17 +245,26 @@ header {
 	display: inline-block;
 	font-size: 2vw;
 	padding: 1vw;
-	color: #B51A2B;
+	color: #c6515e;
 	text-decoration: none;
 	font-family: "Mona-Sans-BlackWideItalic";
 	background-color: #222629;
-	border: 0.3vw solid #B51A2B;
-	transition: 0.1s;
+	border: 0.3vw solid #c6515e;
+	transition: 0.2s;
 }
 
 .KeymastersPasswords li a:hover {
 	color: #222629;
-	background-color: #B51A2B;
+	background-color: #c6515e;
+	box-shadow: 0 0 1vw 0px #c6515e;
+}
+
+.KeymastersPasswords li a:active {
+	transition: 0.05s;
+	background-color: #9b3f4a;
+	border: 0.3vw solid #9b3f4a;
+	box-shadow: 0 0 1vw 0px #9b3f4a;
+	background-color: #9b3f4a;
 }
 
 .KeymastersVault {
@@ -321,12 +330,21 @@ header {
 	font-family: "Mona-Sans-BlackWideItalic";
 	background-color: #222629;
 	border: 0.3vw solid #B79347;
-	transition: 0.1s;
+	transition: 0.2s;
 }
 
 .KeymastersVault li a:hover {
 	color: #222629;
 	background-color: #B79347;
+	box-shadow: 0 0 1vw 0px #B79347;
+}
+
+.KeymastersVault li a:active {
+	transition: 0.05s;
+	background-color: #907437;
+	border: 0.3vw solid #907437;
+	box-shadow: 0 0 1vw 0px #907437;
+	background-color: #907437;
 }
 
 .KeymastersCrypto {
@@ -392,12 +410,21 @@ header {
 	font-family: "Mona-Sans-BlackWideItalic";
 	background-color: #222629;
 	border: 0.3vw solid #77977D;
-	transition: 0.1s;
+	transition: 0.2s;
 }
 
 .KeymastersCrypto li a:hover {
 	color: #222629;
 	background-color: #77977D;
+	box-shadow: 0 0 1vw 0px #77977D;
+}
+
+.KeymastersCrypto li a:active {
+	transition: 0.05s;
+	background-color: #5a725e;
+	border: 0.3vw solid #5a725e;
+	box-shadow: 0 0 1vw 0px #5a725e;
+	background-color: #5a725e;
 }
 
 .KeymastersSCAMGuard {
@@ -463,12 +490,21 @@ header {
 	font-family: "Mona-Sans-BlackWideItalic";
 	background-color: #222629;
 	border: 0.3vw solid #7B919C;
-	transition: 0.1s;
+	transition: 0.2s;
 }
 
 .KeymastersSCAMGuard li a:hover {
 	color: #222629;
 	background-color: #7B919C;
+	box-shadow: 0 0 1vw 0px #7B919C;
+}
+
+.KeymastersSCAMGuard li a:active {
+	transition: 0.05s;
+	background-color: #5c6d75;
+	border: 0.3vw solid #5c6d75;
+	box-shadow: 0 0 1vw 0px #5c6d75;
+	background-color: #5c6d75;
 }
 
 .KeymastersSocial{
@@ -534,13 +570,23 @@ header {
 	font-family: "Mona-Sans-BlackWideItalic";
 	background-color: #222629;
 	border: 0.3vw solid #8D7797;
-	transition: 0.1s;
+	transition: 0.2s;
 }
 
 .KeymastersSocial li a:hover {
 	color: #222629;
 	background-color: #8D7797;
+	box-shadow: 0 0 1vw 0px #8D7797;
 }
+
+.KeymastersSocial li a:active {
+	transition: 0.05s;
+	background-color: #67576f;
+	border: 0.3vw solid #67576f;
+	box-shadow: 0 0 1vw 0px #67576f;
+	background-color: #67576f;
+}
+
 
 .KeymastersAPI {
 	margin-top: 5vw;
@@ -605,19 +651,30 @@ header {
 	font-family: "Mona-Sans-BlackWideItalic";
 	background-color: #222629;
 	border: 0.3vw solid #C7BC1E;
-	transition: 0.1s;
+	transition: 0.2s;
 }
 
 .KeymastersAPI li a:hover {
 	color: #222629;
 	background-color: #C7BC1E;
+	box-shadow: 0 0 1vw 0px #C7BC1E;
 }
+
+.KeymastersAPI li a:active {
+	transition: 0.05s;
+	background-color: #8d8514;
+	border: 0.3vw solid #8d8514;
+	box-shadow: 0 0 1vw 0px #8d8514;
+	background-color: #8d8514;
+}
+
 
 footer {
 	width: 100%;
 	height: 30vh;
 	margin-top: 10vh;
 	border-top: 0.3vw solid #C7BC1E;
+	text-align: center;
 }
 
 footer h1 {
@@ -671,6 +728,17 @@ footer a {
 
 footer a:hover {
 	color: #C7BC1E;
+	-webkit-text-shadow: 0 0 0.5vw #C7BC1E;
+	-moz-text-shadow: 0 0 0.5vw #C7BC1E;
+	text-shadow: 0 0 0.5vw #C7BC1E;
+}
+
+footer a:active {
+	transition: 0.05s;
+	color: #8d8514;
+	-webkit-text-shadow: 0 0 0.5vw #8d8514;
+	-moz-text-shadow: 0 0 0.5vw #8d8514;
+	text-shadow: 0 0 0.5vw #8d8514;
 }
 
 .KeymastersContacts {
@@ -696,9 +764,38 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 1vw auto;
 	border-top: 0.3vw solid #C7BC1E;
 }
+
+#footer_change_language {
+	display: block;
+	margin: 1vh auto 3vh auto;
+	font-size: 1.5vw;
+	padding: 1vw;
+	color: #222629;
+	text-decoration: none;
+	font-family: "Mona-Sans-BlackWideItalic";
+	border: 0.3vw solid #86C232;
+	background-color: #86C232;
+	transition: 0.2s;
+}
+
+#footer_change_language:hover {
+	background-color: #C7BC1E;
+	border: 0.3vw solid #C7BC1E;
+	box-shadow: 0 0 1vw 0px #C7BC1E;
+}
+
+#footer_change_language:active {
+	transition: 0.05s;
+	background-color: #8d8514;
+	border: 0.3vw solid #8d8514;
+	box-shadow: 0 0 1vw 0px #8d8514;
+	background-color: #8d8514;
+}
+
+
 
 @font-face {
 	font-family: "Mona-Sans-BlackWideItalic";
