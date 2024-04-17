@@ -88,6 +88,17 @@ def callback(call):
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                               text=scam_ms[language], parse_mode="html", reply_markup=markup)
 
+<<<<<<< HEAD
+    elif call.data == "Social":
+        markup = types.InlineKeyboardMarkup()
+        for text, callback in social_buttons[language].items():
+            btn = types.InlineKeyboardButton(text=text, callback_data = callback)
+            markup.add(btn)
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                              text=social_ms[language], parse_mode="html", reply_markup=markup)
+
+=======
+>>>>>>> abce3b38b0919d992e7033179039b53b90b32152
     elif "random_passwords$" in call.data:
         menu_info: str = call.data.split("$")[1]
         buttons: tuple = tuple(generation_buttons[language].items())
@@ -96,6 +107,12 @@ def callback(call):
             callback = "random_passwords$" + menu_info[:i:] + str(int(not(bool(int(menu_info[i]))))) + menu_info[i+1::]
             btn = types.InlineKeyboardButton(text=buttons[i][0][int(menu_info[i])], callback_data=callback)
             markup.add(btn)
+<<<<<<< HEAD
+        generate_password_btn = types.InlineKeyboardButton(text=buttons[-1][0],callback_data=buttons[-1][1])
+        markup.add(generate_password_btn)
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                              text=passwords_ms[language], parse_mode="html", reply_markup=markup)
+=======
         generate_password_btn = types.InlineKeyboardButton(text=buttons[-1][0], callback_data=buttons[-1][1] + menu_info)
         markup.add(generate_password_btn)
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
@@ -107,9 +124,21 @@ def callback(call):
             bot.answer_callback_query(call.id, empty_menu_warning[language], show_alert=True)
             return
             
+>>>>>>> abce3b38b0919d992e7033179039b53b90b32152
+
+    elif "generate_password$" in call.data:
+        menu_info = call.data.split("$")[1]
+        if (menu_info == "0000"):
+            bot.answer_callback_query(call.id, empty_menu_warning[language], show_alert=True)
+            return
+
+
 
 def startBot():
     startDatabase()
     print("Keymaster's Bot is started and ready to work.")
     bot.polling(none_stop=True, interval=0)
+<<<<<<< HEAD
+=======
     shutdownDatabase()
+>>>>>>> abce3b38b0919d992e7033179039b53b90b32152
