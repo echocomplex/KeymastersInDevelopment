@@ -20,11 +20,12 @@ from os import getcwd
 
 def startDatabase () -> None:
     # Starting JVM
+    print('%s/Database/DatabaseClassesJava/' % getcwd().replace("\\", "/"))
     startJVM(classpath=([
-        ('%s/Database/DatabaseClassesJava/' % getcwd()),
-        ('%s/Database/DatabaseClassesJava/lib/sqlite-jdbc-3.45.2.0.jar' % getcwd()),
-        ('%s/Database/DatabaseClassesJava/lib/slf4j-api-2.0.9.jar' % getcwd()),
-        ('%s/Database/DatabaseClassesJava/lib/slf4j-simple-2.0.9.jar' % getcwd())])
+        ('%s/Database/DatabaseClassesJava/' % getcwd().replace("\\", "/")),
+        ('%s/Database/DatabaseClassesJava/lib/sqlite-jdbc-3.45.2.0.jar' % getcwd().replace("\\", "/")),
+        ('%s/Database/DatabaseClassesJava/lib/slf4j-api-2.0.9.jar' % getcwd().replace("\\", "/")),
+        ('%s/Database/DatabaseClassesJava/lib/slf4j-simple-2.0.9.jar' % getcwd().replace("\\", "/"))])
     );
 
 def shutdownDatabase () -> None:

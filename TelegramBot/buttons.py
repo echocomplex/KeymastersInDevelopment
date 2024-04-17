@@ -18,12 +18,8 @@ main_menu_buttons = {
         "Keymaster's Passwords": "Passwords",
         "Keymaster's Vault": "Vault",
         "Keymaster's Crypto": "Crypto",
-<<<<<<< HEAD
-        "Keymaster's SCAMGuard": "Scam",
-        "Keymaster's Social": "Social"
-=======
+        "Keymaster's Social": "Social",
         "Keymaster's SCAMGuard": "Scam"
->>>>>>> abce3b38b0919d992e7033179039b53b90b32152
     },
     "EN": {
         "Keymaster's Passwords": "Passwords",
@@ -37,20 +33,14 @@ main_menu_buttons = {
 passwords_buttons = {
     "RU": {
         "Генератор случайных паролей": "random_passwords$1000",
-<<<<<<< HEAD
         "Генератор паролей из текста": "text_password",
-=======
         "Генератор паролей из текста": "text_passwords",
->>>>>>> abce3b38b0919d992e7033179039b53b90b32152
         "Анализ паролей на надежность": "analysis",
     },
     "EN": {
         "Generation random passwords": "random_passwords$1000",
-<<<<<<< HEAD
         "Generation passwords from text": "text_password",
-=======
         "Generation passwords from text": "text_passwords",
->>>>>>> abce3b38b0919d992e7033179039b53b90b32152
         "Analized passwords": "analysis",
     },
 }
@@ -62,7 +52,6 @@ generation_buttons = {
         ("Цифры", "Цифры ✅"): "random_passwords$",
         ("Специальные символы", "Специальные символы ✅"): "random_passwords$",
         "Сгенерировать пароль": "generate_password$",
-<<<<<<< HEAD
     },
     "EN": {
         "Lowercase": "down",
@@ -98,8 +87,6 @@ crypto_buttons = {
         "Афинный шифр": "athenian",
         "Шифр Цезаря": "cesar",
         "Криптоанализ": "cryptoanal"
-=======
->>>>>>> abce3b38b0919d992e7033179039b53b90b32152
     },
     "EN": {
         "Lowercase": "down",

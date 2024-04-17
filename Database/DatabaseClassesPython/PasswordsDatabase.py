@@ -18,7 +18,7 @@ class PasswordsDatabase:
         self.__class = jpype.JClass("PasswordDatabase");  # Get Java Class
         self.__Database = self.__class(username, ('%s/Database/DatabaseFiles/Passwords.db' % getcwd()));  # Init class
 
-    def __del__(self) -> None:
+    def __del__ (self) -> None:
         self.__Database.closeConnection();
 
     def addUser (self) -> None:

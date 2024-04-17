@@ -39,13 +39,10 @@ lowercase = {
     "EN": "<b>Send the text of your choice</b>",
 }
 
-<<<<<<< HEAD
 empty_menu_warning = {
     "RU": "<b> ti daun</b>"
 }
 
-=======
->>>>>>> abce3b38b0919d992e7033179039b53b90b32152
 vault_ms = {
     "RU": "<b>Леха лох</b>",
     "EN": "<b>leha loh</b>",
@@ -57,22 +54,18 @@ crypto_ms = {
 }
 
 scam_ms = {
-<<<<<<< HEAD
     "RU": "<b>Леха лох</b>",
     "EN": "<b>leha loh</b>",
 }
 
 social_ms = {
-    "RU": "<b> HAAHHAHAhahAHHAHAhA</b>",
-=======
     "RU": "<b>Леха  лох</b>",
     "EN": "<b>leha loh</b>",
 }
 
 empty_menu_warning = {
     "RU": "Задайте параметры, прежде чем сгенерировать пароль!",
->>>>>>> abce3b38b0919d992e7033179039b53b90b32152
-    "EN": ""
+    "EN": "Podrochi"
 }
 
 
