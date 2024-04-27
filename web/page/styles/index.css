@@ -49,6 +49,10 @@ header {
 	color: #86C232;
 }
 
+#PasswordHeaderButton:active {
+	background-color: #86C232;
+}
+
 #VaultHeaderButton {
 	background: linear-gradient(#86C232 0 0) 0 100% /var(--t, 0) 0.2vw no-repeat;
 	transition: 0.3s;
@@ -126,9 +130,10 @@ header {
 .mainlogo {
 	align-items: center;
 	background-color: #222629;
+	margin-bottom: 30vh;
 }
 
-.mainlogo img {
+.mainlogoimg {
 	display: block;
 	margin: auto;
 	max-width: 100%;
@@ -136,7 +141,8 @@ header {
 }
 
 .welcome {
-	margin-top: 1vw;
+	opacity: 0;
+	margin-bottom: 30vh;
 }
 
 .welcome h1 {
@@ -159,7 +165,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0 auto 0 auto;
+    margin: 5vh auto 0 auto;
 }
 
 .whatiskeymasters {
@@ -181,7 +187,7 @@ header {
     font-family: "Mona-Sans-BlackWideItalic";
 }
 
-.welcome-logo {
+.logo {
 	max-width: 1000px;
 	max-height: 1000px;
     width: 20vw;
@@ -189,7 +195,7 @@ header {
 }
 
 .KeymastersPasswords {
-	margin-top: 1vw;
+	margin-bottom: 50vh;
 }
 
 .KeymastersPasswords h1 {
@@ -214,7 +220,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0 auto 0 auto;
+    margin: 5vh auto 0 auto;
 }
 
 .what-is-KP {
@@ -268,7 +274,7 @@ header {
 }
 
 .KeymastersVault {
-	margin-top: 5vw;
+	margin-bottom: 50vh;
 }
 
 .KeymastersVault h1 {
@@ -293,7 +299,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0 auto 0 auto;
+    margin: 5vh auto 0 auto;
 }
 
 .what-is-KV {
@@ -348,7 +354,7 @@ header {
 }
 
 .KeymastersCrypto {
-	margin-top: 5vw;
+	margin-bottom: 50vh;
 }
 
 .KeymastersCrypto h1 {
@@ -373,7 +379,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0 auto 0 auto;
+    margin: 5vh auto 0 auto;
 }
 
 .what-is-KC {
@@ -428,7 +434,7 @@ header {
 }
 
 .KeymastersSCAMGuard {
-	margin-top: 5vw;
+	margin-bottom: 50vh;
 }
 
 .KeymastersSCAMGuard h1 {
@@ -453,7 +459,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0 auto 0 auto;
+    margin: 5vh auto 0 auto;
 }
 
 .what-is-KS {
@@ -508,7 +514,7 @@ header {
 }
 
 .KeymastersSocial{
-	margin-top: 5vw;
+	margin-bottom: 50vh;
 }
 
 .KeymastersSocial h1 {
@@ -533,7 +539,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0 auto 0 auto;
+    margin: 5vh auto 0 auto;
 }
 
 .what-is-KSl {
@@ -614,7 +620,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0 auto 0 auto;
+    margin: 5vh auto 0 auto;
 }
 
 .what-is-KAPI {
@@ -776,26 +782,21 @@ footer a:active {
 	color: #222629;
 	text-decoration: none;
 	font-family: "Mona-Sans-BlackWideItalic";
-	border: 0.3vw solid #86C232;
 	background-color: #86C232;
 	transition: 0.2s;
+	border: 0;
 }
 
 #footer_change_language:hover {
 	background-color: #C7BC1E;
-	border: 0.3vw solid #C7BC1E;
 	box-shadow: 0 0 1vw 0px #C7BC1E;
 }
 
 #footer_change_language:active {
 	transition: 0.05s;
-	background-color: #8d8514;
-	border: 0.3vw solid #8d8514;
 	box-shadow: 0 0 1vw 0px #8d8514;
 	background-color: #8d8514;
 }
-
-
 
 @font-face {
 	font-family: "Mona-Sans-BlackWideItalic";

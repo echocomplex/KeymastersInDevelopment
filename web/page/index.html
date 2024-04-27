@@ -5,119 +5,126 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Keymaster's Project</title>
         <link rel="stylesheet" href="styles/index.css">
+        <script src="libs/gsap/gsap.min.js" defer></script>
+        <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+        <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
         <script src="scripts/index.js" defer></script>
         <noscript>Для работы сайта требуется JavaScript. Наш сайт абсолютно безопасен и использует JS для анимаций.</noscript>
     </head>
 
     <body>
-        <header class="navbar-menu">
-            <li><a id="PasswordsHeaderButton" href="#">Keymaster's.Passwords</a></li>
-            <li><a id="VaultHeaderButton" href="#">Keymaster's.Vault</a></li>
-            <li><a id="CryptoHeaderButton" href="#">Keymaster's.Crypto</a></li>
-            <li><a id="SCAMGuardHeaderButton" href="#">Keymaster's.SCAMGuard</a></li>
-            <li><a id="SocialHeaderButton" href="#">Keymaster's.Social</a></li>
-        </header>
-
-        <div class="mainlogo">
-            <img src="gif/Animation.gif">
+        <div class="wrapper">
+            <div class="content">
+                <header class="navbar-menu">
+                    <li><a id="PasswordsHeaderButton" href="#">Keymaster's.Passwords</a></li>
+                    <li><a id="VaultHeaderButton" href="#">Keymaster's.Vault</a></li>
+                    <li><a id="CryptoHeaderButton" href="#">Keymaster's.Crypto</a></li>
+                    <li><a id="SCAMGuardHeaderButton" href="#">Keymaster's.SCAMGuard</a></li>
+                    <li><a id="SocialHeaderButton" href="#">Keymaster's.Social</a></li>
+                </header>
+        
+                <div class="mainlogo">
+                    <img class="mainlogoimg" src="gif/Animation.gif">
+                </div>
+        
+                <section class="welcome">
+                    <h1>Welcome to <b>Keymaster's</b></h1>
+                    <div class="welcome-items">
+                        <div class="whatiskeymasters">
+                            <p><b>Keymaster's</b> - это проект с открытым исходным кодом, объединяющий несколько модулей и компонентов для обеспечения безопасности как самих паролей и данных, так и их хранения.</p>
+                        </div>
+                        <img data-speed="1.1" class="logo" src="img/keymastersSmallLogoStaticLight.png">
+                    </div>
+                </section>
+        
+                <section class="KeymastersPasswords">
+                    <h1 data-speed="1.1" >Keymaster's.<b>Passwords</b></h1>
+                    <div class="KeymastersPasswordsItems">
+                        <div data-speed="1.1" class="what-is-KP">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
+                        </div>
+                        <img class="logo" id="KPLogo" src="img/keymastersSmallLogoStaticLight.png" />
+                    </div>
+                    <li><a href="">CONTINUE → Passwords</a></li>
+                </section>
+        
+                <section class="KeymastersVault">
+                    <h1>Keymaster's.<b>Vault</b></h1>
+                    <div class="KeymastersVaultItems">
+                        <div class="what-is-KV">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
+                        </div>
+                        <img data-speed="1.1" class="logo" src="img/keymastersSmallLogoStaticLight.png" />
+                    </div>
+                    <li><a href="">CONTINUE → Vault</a></li>
+                </section>
+        
+                <section class="KeymastersCrypto">
+                    <h1 data-speed="1.1">Keymaster's.<b>Crypto</b></h1>
+                    <div class="KeymastersCryptoItems">
+                        <div data-speed="1.1" class="what-is-KC">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
+                        </div>
+                        <img class="logo" id="KCLogo" src="img/keymastersSmallLogoStaticLight.png" />
+                    </div>
+                    <li data-speed="1.1"><a href="">CONTINUE → Crypto</a></li>
+                </section>
+        
+                <section class="KeymastersSCAMGuard">
+                    <h1>Keymaster's.<b>SCAMGuard</b></h1>
+                    <div class="KeymastersSCAMGuardItems">
+                        <div class="what-is-KS">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
+                        </div>
+                        <img data-speed="1.1" class="logo" src="img/keymastersSmallLogoStaticLight.png" />
+                    </div>
+                    <li><a href="">CONTINUE → SCAMGuard</a></li>
+                </section>
+        
+                <section class="KeymastersSocial">
+                    <h1 data-speed="1.1">Keymaster's.<b>Social</b></h1>
+                    <div class="KeymastersSocialItems">
+                        <div data-speed="1.1" class="what-is-KSl">
+                            <p>Идите нахуй, я ничего не придумал. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
+                        </div>
+                        <img class="logo" src="img/keymastersSmallLogoStaticLight.png" />
+                    </div>
+                    <li data-speed="1.1"><a href="">CONTINUE → Social</a></li>
+                </section>
+        
+                <section class="KeymastersAPI">
+                    <h1>Keymaster's.<b>API</b></h1>
+                    <div class="KeymastersAPIItems">
+                        <div class="what-is-KAPI">
+                            <p>Идите нахуй, я ничего не придумал. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
+                        </div>
+                        <img class="logo" src="img/keymastersSmallLogoStaticLight.png" />
+                    </div>
+                    <li><a href="">CONTINUE → API</a></li>
+                </section>
+        
+                <footer>
+                    <h1>Keymaster's Project</h1>
+                    <h2>License 2024: <a href="#">GNU GPLv2</a>. All rights reserved.</h2>
+                    <div class="footer-items">
+                        <div class="team">
+                            <h2 class="KeymastersTeam">Keymaster's Team:</h2>
+                            <h3><a href="">Aleksey Ivanov</a></h3>
+                            <h3><a href="">Alexander Suslin</a></h3>
+                            <h3><a href="">Alexander Blinov</a></h3>
+                            <h3><a href="">Timofey Maksimov</a></h3>
+                            <h3><a href="">Artemiy Borodulin</a></h3>
+                        </div>
+                        <div class="contacts">
+                            <h2 class="KeymastersContacts">Keymaster's Contacts:</h2>
+                            <h3><a href="">Support</a></h3>
+                            <h3><a href="">Telegram Bot</a></h3>
+                            <h3><a href="">GitHub</a></h3>
+                        </div>
+                        <button id="footer_change_language" class="change_language">Switch to English 🇬🇧</button>
+                    </div>
+                </footer>
+            </div>
         </div>
-
-        <section class="welcome">
-            <h1>Welcome to <b>Keymaster's</b></h1>
-            <div class="welcome-items">
-                <div class="whatiskeymasters">
-                    <p><b>Keymaster's</b> - это проект с открытым исходным кодом, объединяющий несколько модулей и компонентов для обеспечения безопасности как самих паролей и данных, так и их хранения.</p>
-                </div>
-                <img class="welcome-logo" src="img/keymastersSmallLogoStaticLight.png">
-            </div>
-        </section>
-
-        <section class="KeymastersPasswords">
-            <h1>Keymaster's.<b>Passwords</b></h1>
-            <div class="KeymastersPasswordsItems">
-                <div class="what-is-KP">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
-                </div>
-                <img class="welcome-logo" src="img/keymastersSmallLogoStaticLight.png" />
-            </div>
-            <li><a href="">go => Passwords</a></li>
-        </section>
-
-        <section class="KeymastersVault">
-            <h1>Keymaster's.<b>Vault</b></h1>
-            <div class="KeymastersVaultItems">
-                <div class="what-is-KV">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
-                </div>
-                <img class="welcome-logo" src="img/keymastersSmallLogoStaticLight.png" />
-            </div>
-            <li><a href="">go => Vault</a></li>
-        </section>
-
-        <section class="KeymastersCrypto">
-            <h1>Keymaster's.<b>Crypto</b></h1>
-            <div class="KeymastersCryptoItems">
-                <div class="what-is-KC">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
-                </div>
-                <img class="welcome-logo" src="img/keymastersSmallLogoStaticLight.png" />
-            </div>
-            <li><a href="">go => Crypto</a></li>
-        </section>
-
-        <section class="KeymastersSCAMGuard">
-            <h1>Keymaster's.<b>SCAMGuard</b></h1>
-            <div class="KeymastersSCAMGuardItems">
-                <div class="what-is-KS">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
-                </div>
-                <img class="welcome-logo" src="img/keymastersSmallLogoStaticLight.png" />
-            </div>
-            <li><a href="">go => SCAMGuard</a></li>
-        </section>
-
-        <section class="KeymastersSocial">
-            <h1>Keymaster's.<b>Social</b></h1>
-            <div class="KeymastersSocialItems">
-                <div class="what-is-KSl">
-                    <p>Идите нахуй, я ничего не придумал. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
-                </div>
-                <img class="welcome-logo" src="img/keymastersSmallLogoStaticLight.png" />
-            </div>
-            <li><a href="">go => Social</a></li>
-        </section>
-
-        <section class="KeymastersAPI">
-            <h1>Keymaster's.<b>API</b></h1>
-            <div class="KeymastersAPIItems">
-                <div class="what-is-KAPI">
-                    <p>Идите нахуй, я ничего не придумал. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iure expedita tenetur esse ut quidem rem illum aliquid? Consequuntur, libero vitae qui maiores ipsam officia. Itaque obcaecati in vitae ad!</p>
-                </div>
-                <img class="welcome-logo" src="img/keymastersSmallLogoStaticLight.png" />
-            </div>
-            <li><a href="">go => API</a></li>
-        </section>
-
-        <footer>
-            <h1>Keymaster's Project</h1>
-            <h2>License: <a href="#">GNU GPLv2</a>. All rights reserved.</h2>
-            <div class="footer-items">
-                <div class="team">
-                    <h2 class="KeymastersTeam">Keymaster's Team:</h2>
-                    <h3><a href="">Aleksey Ivanov</a></h3>
-                    <h3><a href="">Alexander Suslin</a></h3>
-                    <h3><a href="">Alexander Blinov</a></h3>
-                    <h3><a href="">Timofey Maksimov</a></h3>
-                    <h3><a href="">Artemiy Borodulin</a></h3>
-                </div>
-                <div class="contacts">
-                    <h2 class="KeymastersContacts">Keymaster's Contacts:</h2>
-                    <h3><a href="">Support</a></h3>
-                    <h3><a href="">Telegram Bot</a></h3>
-                    <h3><a href="">GitHub</a></h3>
-                </div>
-                <button id="footer_change_language" class="change_language">Switch to English 🇬🇧</button>
-            </div>
-        </footer>
     </body>
 </html>
